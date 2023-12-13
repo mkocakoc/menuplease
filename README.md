@@ -1,3 +1,11 @@
+# What is MenuPlease
+it is quick selecable and readable digital web site menu
+you can link this menu on table with QR code
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

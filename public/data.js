@@ -1,8 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-
 const pizzaData = [
   {
     name: "Focaccia",
@@ -47,39 +42,3 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-
-
-function App() {
-  
-  return (
-    <div className="App">
-     <h1>Menu</h1>
-      <Pizza />
-    </div>
-  );
-}
-
-function Pizza(){
-  return (
-  <div>
-    <img src='pizzas/focaccia.jpg' alt='Focaccia' />
-    <h2>Focaccia</h2>
-    <p>Bread with italian olive oil and rosemary</p>
-  </div>  );
-}
-
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

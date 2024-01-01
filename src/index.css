@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 70vw;
   margin: 0 auto;
 
   display: flex;
@@ -71,6 +71,11 @@ body {
   right: 0;
 }
 
+
+.app {
+  width: 1400px;
+  margin: 0 auto;
+}
 /* *************** */
 
 .menu {
@@ -176,6 +181,64 @@ body {
 
 .btn:hover {
   background-color: #e9bb24;
+}
+
+.menuFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.menuFlex .menuFlexItem {
+  flex: 1 1 31%;
+  min-width: 31%;
+  max-width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  padding: 2rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: burlywood;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  min-height: 280px;
+}
+.menuFlex .menuFlexItem  img {
+  width: 15vw;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, margin-bottom 0.5s ease;
+}
+.menuFlex .menuFlexItem  img:hover {
+  transform: scale(1.1);
+}
+.menuFlexItem .line {
+  display: flex;
+  justify-content: space-between;
+}
+.sold-out {
+  display: inline-block;
+  color: #888;
+  filter: grayscale();
+}
+.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+
+}
+.sold-out img:hover {
+  transform: scale(1) !important;
+}
+.sold-out .soldout {
+  margin-left: 1rem;
+  color: #000;
+  font-weight: 800;
 }
 
 /*
